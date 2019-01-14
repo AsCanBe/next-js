@@ -26,8 +26,8 @@ const MenuWrapper = styled.div`
 const Hamburger = styled.div`
   display:              inline-block;
   position:             relative;
-  height:               1.9rem;
-  width:                2.1rem;
+  height:               30px;
+  width:                33px;
   margin-left:          .5rem;
   border:               solid 2px #3D348B;
   border-radius:        .4rem;
@@ -38,6 +38,7 @@ const Hamburger = styled.div`
     background-color:   #3D348B;
     position:           absolute;
     left:               .3rem;
+    transition:         .9s;
     :nth-child(1) {
       top:              7px;
     }
@@ -46,6 +47,21 @@ const Hamburger = styled.div`
     }
     :nth-child(3) {
       bottom:           7px;
+    }
+  }
+  &.active {
+    div {
+      :nth-child(1) {
+        transform:          rotate(45deg);
+        top:                12px
+      }
+      :nth-child(2) {
+        background-color:   transparent;
+      }
+      :nth-child(3) {
+        transform:          rotate(-45deg);
+        bottom:             12px;
+      }
     }
   }
 `
@@ -74,19 +90,25 @@ const Menu = styled.div`
   }
 `
 
+const Logo = styled.img`
+  max-width: 60px;
+  height: 35px;
+`
+
 const handleMenu = (e) => {
   e.preventDefault();
   document.querySelector('.menu').classList.toggle('active');
+  document.querySelector('.hamburger').classList.toggle('active');
 }
 
 const Header = () => (
   <NavBar>
-    LOGO
+    <Logo src="/static/sunflower-logo.png" />
     <MenuWrapper
       onClick={handleMenu}
     >
       Menu
-      <Hamburger>
+      <Hamburger className="hamburger">
         <div />
         <div />
         <div />

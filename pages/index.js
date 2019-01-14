@@ -18,16 +18,16 @@ const Headshot = styled.img`
 const Main = styled.main`
   text-align:         center;
   background-color:   #f2f2f2;
-  padding:            5rem 2rem 0 2rem;
+  padding:            5rem 2rem 1rem 2rem;
+  color:              #3D348B;
+  font-weight:        700;
   p {
-    margin-bottom:    0;
-    font-size:        1rem;
-    font-weight:      400;
+    margin:           1rem 0;
   }
 `
 
 const DownArrow = styled.img`
-  width: 4rem;
+  width: 2rem;
 `
 
 export default () => (
