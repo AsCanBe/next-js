@@ -1,15 +1,13 @@
 import styled from 'styled-components'
 import Header from './Header'
-
-const Wrapper = styled.div`
-  
-`
+import Footer from './Footer'
 
 const Layout = (props) => (
-  <Wrapper>
+  <div>
     <Header />
     {props.children}
-  </Wrapper>
+    <Footer />
+  </div>
 )
 
 export default Layout

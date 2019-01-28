@@ -4,6 +4,6 @@ import GlobalStyle from '../styles/GlobalStyle'
 export default () => (
   <Layout>
     <GlobalStyle />
-    <p>This is the about page</p>
+    <p>This is the contact page</p>
   </Layout>
 )
