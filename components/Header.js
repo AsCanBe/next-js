@@ -22,11 +22,17 @@ const Header = () => (
           <Link href="/">
             <a className="container">Home</a>
           </Link>
+          <Link href="/details-pricing">
+            <a className="container">Details & Pricing</a>
+          </Link>
           <Link href="/contact">
             <a className="container">Get in Touch</a>
           </Link>
-          <PhoneContactWrapper href="tel:07508401223">
-            <PhoneIcon src="/static/telephone.png" />07508 401223
+          <PhoneContactWrapper
+            href="tel:07508401223"
+            className="container"
+          >
+            <img src="/static/phone-icon-white.png" />07508 401223
           </PhoneContactWrapper>
         </Menu>
       </MenuWrapper>
@@ -42,7 +48,8 @@ const NavBar = styled.nav`
   position:             fixed;
   height:               67px;
   z-index:              10;
-  position:             relative;
+  width:                100%;
+  background-color:     #fff;
   a {
     text-decoration:    none;
   }
@@ -64,6 +71,7 @@ const Hamburger = styled.div`
   border:               solid 2px #3D348B;
   border-radius:        .4rem;
   z-index:              100;
+  transition:           .9s;
   div {
     height:             2px;
     width:              1.2rem;
@@ -82,7 +90,9 @@ const Hamburger = styled.div`
     }
   }
   &.active {
+    border-color:           #fff;
     div {
+      background-color:     #fff;
       :nth-child(1) {
         transform:          rotate(45deg);
         top:                12px
@@ -103,7 +113,7 @@ const Menu = styled.div`
   width:                100%;
   left:                 100%;
   transition:           .9s ease-out;
-  background-color:     rgba(255,255,255,.9);
+  background-image:     linear-gradient(to top right, #3D348B, #7765E3);
   top:                  0;
   height:               100vh;
   display:              flex;
@@ -114,10 +124,8 @@ const Menu = styled.div`
     left:               0;
   }
   a {
-    color:              #3D348B;
-    margin-bottom:      2rem;
-    border:             solid 2px #3D348B;
-    border-radius:      1rem;
+    color:              #fff;
+    margin-bottom:      3rem;
   }
 `
 
@@ -129,12 +137,11 @@ const CompanyLogo = styled.img`
 const PhoneContactWrapper = styled.a`
   display:      flex;
   align-items:  center;
-`
-
-const PhoneIcon = styled.img`
-  width:          25px;
-  height:         25px;
-  margin-right:   .5rem;
+  img {
+    width:          25px;
+    height:         25px;
+    margin-right:   .5rem;
+  }
 `
 
 export default Header
