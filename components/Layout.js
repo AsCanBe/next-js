@@ -17,6 +17,6 @@ const BodyWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
-  position:   absolute;
-  top:        67px;
+  position:     absolute;
+  top:          67px;
 `
