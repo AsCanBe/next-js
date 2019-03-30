@@ -10,25 +10,28 @@ const { white, purple } = Colors;
 export default (props) => (
   <Menu className="menu">
     <Link 
-      to="/"
+      to="home"
       smooth={true}
       onClick={props.handleMenu}
+      className="container"
     >
-      <a className="container">Home</a>
+      Home
     </Link>
     <Link
       to="details-and-pricing"
       smooth={true}
       onClick={props.handleMenu}
+      className="container"
     >
-      <a className="container">Details & Pricing</a>
+      Details & Pricing
     </Link>
     <Link
       to="get-in-touch"
       smooth={true}
       onClick={props.handleMenu}
+      className="container"
     >
-      <a className="container">Get in Touch</a>
+      Get in Touch
     </Link>
   </Menu>
 )
@@ -79,6 +82,7 @@ const Menu = styled.div`
       transition:               .5s;
       border-bottom:            solid 1px transparent;
       padding-bottom:           1rem;
+      cursor:                   pointer;
       :hover {
         padding-bottom:         0;
         border-bottom-color:    ${white};

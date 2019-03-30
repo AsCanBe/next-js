@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'next/link'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
@@ -13,6 +12,18 @@ import Styles from '../components/Styles'
 export default class Index extends Component {
   constructor() {
     super();
+  }
+
+  componentDidMount() {
+    const toTopButton = document.getElementById('to-top-button');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY === 0) {
+        toTopButton.classList.remove('scrolled');
+      } else if (window.scrollY > 0) {
+        toTopButton.classList.add('scrolled');
+      }
+    })
   }
 
   render() {

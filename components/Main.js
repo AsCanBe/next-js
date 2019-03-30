@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import styled from 'styled-components'
 
 import Header from './Header'
@@ -17,9 +18,11 @@ export default (props) => (
         <FindOutMore>
           <a onClick={() => {this.scroll('about-me')}} />
           <p>Find Out More</p>
-          <svg height="50" width="40">
-            <path d="M10 35 L20 50 L20 0 L20 50 L30 35 L20 50 Z" stroke="#fff" strokeWidth="1"/>
-          </svg>
+          <Link to="about-me" smooth={true}>
+            <svg height="50" width="40">
+              <path d="M10 35 L20 50 L20 0 L20 50 L30 35 L20 50 Z" stroke="#fff" strokeWidth="1"/>
+            </svg>
+          </Link>
         </FindOutMore>
       </div>
     </div>
@@ -41,10 +44,6 @@ const Main = styled.main`
     flex-direction:    column;
     align-items:       center;
     justify-content:   center;
-
-    div {
-
-    }
   }
 `
 
@@ -60,12 +59,5 @@ const FindOutMore = styled.div`
   }
   img {
     width:                      2rem;
-  }
-  a {
-    position:                   absolute;
-    top:                        0;
-    right:                      0;
-    bottom:                     0;
-    left:                       0;
   }
 `

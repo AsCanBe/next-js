@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 import Menu from './Menu'
+import ToTopButton from './ToTopButton'
 
 import { Colors } from '../styles/base/variables'
 
@@ -27,7 +28,7 @@ class Header extends Component {
           <NavBar className="padded">
             <CompanyLogo src="/static/sunflower.png" />
             <HamburgerWrapper onClick={this.handleMenu}>
-              Menu
+              <span>Menu</span>
               <Hamburger className="hamburger">
                 <div />
                 <div />
@@ -40,6 +41,7 @@ class Header extends Component {
             />
           </NavBar>
         </NavWrapper>
+        <ToTopButton className="hidden" />
       </header>
     )
   }
@@ -64,8 +66,11 @@ const NavBar = styled.nav`
 const HamburgerWrapper = styled.div`
   display:                      flex;
   align-items:                  center;
-  font-weight:                  300;
   cursor:                       pointer;
+  span {
+    font-size:                  1rem;
+    font-weight:                300;
+  }
   @media (min-width: 992px) {
     display:                    none;
   }
