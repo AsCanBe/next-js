@@ -72,7 +72,7 @@ export default class Index extends Component {
           <div className="wrapper grey">
             <TypesOfSession className="padded">
               <h2 className="section-title">Types of Session</h2>
-              <FlexWrapper className="flexbox">
+              <FlexWrapper className="flexbox--desktop">
                 <div>
                   <img src="/static/face-to-face.png" />
                   <p>Face to Face</p>

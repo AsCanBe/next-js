@@ -34,7 +34,13 @@ const HelperClasses = createGlobalStyle`
 
   .align {
     &--center {
-      text-align: center;
+      text-align:     center;
+      &--mobile {
+        text-align:   center;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
     }
   }
 
