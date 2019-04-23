@@ -14,7 +14,7 @@ export const Tones = {
 
 export const fontSizes = {
   sm: '.8rem',
-  md: '1.2rem',
+  md: '1.1rem',
   lg: '1.9rem',
   xl: '3rem',
 }

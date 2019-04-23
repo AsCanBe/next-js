@@ -5,25 +5,13 @@ const { purple } = Colors;
 const { darkGrey } = Tones;
 const { md, lg, xl } = fontSizes;
 
-export const Typography = createGlobalStyle`
+const Typography = createGlobalStyle`
   body {
     font-family: 'Lato', sans-serif;
     color:       ${darkGrey};
     line-height: 1.6;
-
-    p {
-      font-size:   ${md};
-      font-weight: 300;
-
-      a {
-        color: ${purple};
-      }
-    }
-
-    a {
-      text-decoration: none;
-      font-size:       ${md};
-    }
+    font-size:   ${md};
+    font-weight: 300;
 
     h1 {
       font-size: ${xl};
@@ -37,4 +25,11 @@ export const Typography = createGlobalStyle`
       font-weight: 400;
     }
   }
+
+  button, span {
+    font-size:   ${md};
+    font-weight: 300;
+  }
 `
+
+export default Typography

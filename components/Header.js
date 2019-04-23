@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Menu from './Menu'
 import ToTopButton from './ToTopButton'
 
-import { Colors } from '../styles/base/variables'
+import { Colors } from '../styles/variables'
 
 const { white, purple } = Colors;
 
@@ -23,11 +23,22 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
+      <header role="banner">
         <NavWrapper>
-          <NavBar className="padded">
-            <CompanyLogo src="/static/sunflower.png" />
-            <HamburgerWrapper onClick={this.handleMenu}>
+          <NavBar
+            className="padded"
+            role="navigation"
+            aria-label="Main Navigation"
+          >
+            <MainLogo
+              src="/static/sunflower.png"
+              alt="Helianthus Counselling Logo"
+            />
+            <HamburgerWrapper
+              onClick={this.handleMenu}
+              role="button"
+              aria-label="Open close main menu on mobile device"
+            >
               <span>Menu</span>
               <Hamburger className="hamburger">
                 <div />
@@ -41,7 +52,10 @@ class Header extends Component {
             />
           </NavBar>
         </NavWrapper>
-        <ToTopButton className="hidden" />
+        <ToTopButton
+          className="hidden"
+          role="button"
+        />
       </header>
     )
   }
@@ -125,7 +139,7 @@ const Hamburger = styled.div`
   }
 `
 
-const CompanyLogo = styled.img`
+const MainLogo = styled.img`
   max-width:  60px;
   height:     35px;
 `

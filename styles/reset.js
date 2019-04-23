@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
+const Reset = createGlobalStyle`
   * {
     box-sizing:       border-box;
     -moz-box-sizing:  border-box;
@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
   }
+  span {
+    display: block;
+  }
 `
 
-export default GlobalStyle
+export default Reset

@@ -1,9 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
-// import Link from 'next/link'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
-import { Colors } from '../styles/base/variables'
+import { Colors } from '../styles/variables'
 
 const { white, purple } = Colors;
 
@@ -78,7 +76,6 @@ const Menu = styled.div`
       display:                  inline-flex;
       flex-direction:           column;
       justify-content:          center;
-      font-size:                .9rem;
       transition:               .5s;
       border-bottom:            solid 1px transparent;
       padding-bottom:           1rem;

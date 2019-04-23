@@ -1,9 +1,11 @@
 import React from 'react'
-import { Typography } from '../styles/base/typography'
-import HelperClasses from '../styles/base/helperClasses'
+import Reset from '../styles/reset'
+import Typography from '../styles/typography'
+import HelperClasses from '../styles/helperClasses'
 
 export default () => (
   <div>
+    <Reset />
     <Typography />
     <HelperClasses />
   </div>

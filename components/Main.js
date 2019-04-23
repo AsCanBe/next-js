@@ -1,10 +1,9 @@
-import React from 'react'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import styled from 'styled-components'
 
 import Header from './Header'
 
-import { Colors } from '../styles/base/variables'
+import { Colors } from '../styles/variables'
 
 const { white, purple } = Colors;
 
@@ -13,11 +12,15 @@ export default (props) => (
     <Header scroll={props.scroll} />
     <div className="overlay flexbox--mobile wrapper">
       <div className="padded align--center">
-        <h1>Helianthus Counselling</h1>
-        <p>a person-centred therapy service in Needham Market & Stowmarket, within easy reach of Ipswich & Bury St Edmunds.</p>
+        <h1 role="heading">Helianthus Counselling</h1>
+        <p>A person-centred therapy service, based in Needham Market & Stowmarket, Suffolk, within easy reach of Ipswich & Bury St Edmunds.</p>
         <FindOutMore>
-          <a onClick={() => {this.scroll('about-me')}} />
-          <p>Find Out More</p>
+          <a
+            onClick={() => {this.scroll('about-me')}}
+            role="button"
+            tabIndex="0"
+          />
+          <span>Find Out More</span>
           <Link to="about-me" smooth={true}>
             <svg height="50" width="40">
               <path d="M10 35 L20 50 L20 0 L20 50 L30 35 L20 50 Z" stroke="#fff" strokeWidth="1"/>

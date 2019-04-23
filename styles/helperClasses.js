@@ -28,6 +28,11 @@ const HelperClasses = createGlobalStyle`
     }
   }
 
+  .verticalCenter {
+    flex-direction:  column;
+    justify-content: center;
+  }
+
   .section-title {
     text-align: center;
   }
