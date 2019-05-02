@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import Menu from './Menu'
-import ToTopButton from './ToTopButton'
+import Menu from './Menu';
+import ToTopButton from './ToTopButton';
 
-import { Colors } from '../styles/variables'
+import { Colors } from '../styles/variables';
 
 const { white, purple } = Colors;
 
@@ -144,4 +144,4 @@ const MainLogo = styled.img`
   height:     35px;
 `
 
-export default Header
+export default Header;

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll'
-import styled from 'styled-components'
+import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import styled from 'styled-components';
 
-import { Colors } from '../styles/variables'
+import { Colors } from '../styles/variables';
 
 const { white, purple } = Colors;
 

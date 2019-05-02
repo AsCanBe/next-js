@@ -26,6 +26,9 @@ const HelperClasses = createGlobalStyle`
         display: flex;
       }
     }
+    > div {
+      flex-basis: 50%;
+    }
   }
 
   .verticalCenter {
@@ -46,6 +49,15 @@ const HelperClasses = createGlobalStyle`
           text-align: left;
         }
       }
+    }
+  }
+
+  .quote {
+    font-weight: 400;
+    padding: 1rem 4rem;
+    > span {
+      font-size: .9rem;
+      font-weight: 400;
     }
   }
 

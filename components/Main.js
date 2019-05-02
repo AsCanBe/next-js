@@ -1,9 +1,9 @@
-import { Link, animateScroll as scroll } from 'react-scroll'
-import styled from 'styled-components'
+import { Link, animateScroll as scroll } from 'react-scroll';
+import styled from 'styled-components';
 
-import Header from './Header'
+import Header from './Header';
 
-import { Colors } from '../styles/variables'
+import { Colors } from '../styles/variables';
 
 const { white, purple } = Colors;
 

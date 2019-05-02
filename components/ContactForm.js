@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { Colors, Tones } from '../styles/variables'
+import { Colors, Tones } from '../styles/variables';
 
 const { purple } = Colors;
 const { darkPurple } = Tones;

@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import HelperClasses from '../styles/helperClasses'
+import styled from 'styled-components';
+import HelperClasses from '../styles/helperClasses';
 
-import { Colors } from '../styles/variables'
+import { Colors } from '../styles/variables';
 
 const { white } = Colors;
 
@@ -15,7 +15,6 @@ const Footer = () => (
         id="info"
         className="padded align--center--mobile"
       >
-        <span>Copyright © Helianthis Counselling 2019.</span>
         <span>Part of the <a href="http://encorewellness.co.uk/" target="_blank">Encore Wellness</a> network:</span>
         <span>
           <a href="http://encorewellness.co.uk/" target="_blank">
@@ -26,32 +25,31 @@ const Footer = () => (
           </a>
         </span>
       </div>
-      <div role="list">
-        <address
-          className="padded align--center--mobile"
-          role="listitem"
-        >
-          <span><strong>Stowmarket</strong></span>
-          <span>Helianthus Counselling</span>
-          <span>Church Road</span>
-          <span>Battisford, Stowmarket, Suffolk</span>
-          <span>IP14 2HF</span>
-        </address>
-        <address
-          className="padded align--center--mobile"
-          role="listitem"
-        >
-          <span><strong>Needham Market</strong></span>
-          <span>Helianthus Counselling</span>
-          <span>Encore Wellness</span>
-          <span>20 High Street</span>
-          <span>Needham Market, Suffolk</span>
-          <span>IP6 8AP</span>
-        </address>
-      </div>
+      <address
+        className="padded align--center--mobile"
+        role="listitem"
+      >
+        <span><strong>Stowmarket</strong></span>
+        <span>Helianthus Counselling</span>
+        <span>Church Road</span>
+        <span>Battisford, Stowmarket, Suffolk</span>
+        <span>IP14 2HF</span>
+      </address>
+      <address
+        className="padded align--center--mobile"
+        role="listitem"
+      >
+        <span><strong>Needham Market</strong></span>
+        <span>Helianthus Counselling</span>
+        <span>Encore Wellness</span>
+        <span>20 High Street</span>
+        <span>Needham Market, Suffolk</span>
+        <span>IP6 8AP</span>
+      </address>
     </div>
     <ByLine className="align--center">
       Website built with ❤️ by <a href="mailto:ghrodwell@gmail.com" target="_blank">Guy Hunter-Rodwell</a>
+      <span>Copyright © Helianthis Counselling 2019.</span>
     </ByLine>
   </FooterWrapper>
 )
@@ -84,4 +82,4 @@ const ByLine = styled.div`
   padding: 1rem 0;
 `
 
-export default Footer
+export default Footer;

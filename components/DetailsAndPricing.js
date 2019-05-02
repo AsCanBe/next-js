@@ -1,23 +1,32 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export default () => (
   <div id="details-and-pricing">
     <div className="wrapper purple">
       <div className="padded align--center">
-        <h2 className="section-title">Pricing</h2>
+        <h2
+          className="section-title"
+          role="heading"
+        >Pricing</h2>
+        <h4 role="heading">One-to-one Counselling</h4>
         <p>£50 per session</p>
         <p>£25 per session for students and unwaged (with verification)</p>
-        <p>Your introductory session will be completely free of charge. It is usual to have one session per week thereafter, which each last for 50 minutes, but there is no upper limit on the amount of sessions you can choose to attend.</p>
-        <h2>Availability</h2>
+        <h4 role="heading">Couple's Therapy</h4>
+        <p>£80 per session</p>
+        <p>Payment can be made with cash, debit card or bank transfer at the end of the counselling session.</p>
+        <h2 role="heading">Availability</h2>
         <p>7.30am – 5.30pm, Monday - Friday</p>
         <p>(Some evenings are available)</p>
-        <h2>Types of Clients</h2>
-        <p>All adults</p>
+        <h2 role="heading">Types of Clients</h2>
+        <p>All adults and young adults 16+</p>
       </div>
     </div>
     <div className="wrapper grey">
       <TypesOfSession className="padded">
-        <h2 className="section-title">Types of Session</h2>
+        <h2
+          className="section-title"
+          role="heading"
+        >Types of Session</h2>
         <FlexWrapper
           className="flexbox--desktop"
           role="list"
