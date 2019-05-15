@@ -13,7 +13,7 @@ export default () => (
         <p>£25 per session for students and unwaged (with verification)</p>
         <h4 role="heading">Couple's Therapy</h4>
         <p>£80 per session</p>
-        <p>Payment can be made with cash, debit card or bank transfer at the end of the counselling session.</p>
+        <p>Payment will be made at the end of the counselling session with cash, debit card or bank transfer.</p>
         <h2 role="heading">Availability</h2>
         <p>7.30am – 5.30pm, Monday - Friday</p>
         <p>(Some evenings are available)</p>

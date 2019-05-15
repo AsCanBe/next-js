@@ -28,7 +28,7 @@ const Button = styled.div`
   position:         fixed;
   right:            1rem;
   bottom:           1rem;
-  background-color: rgba(255,255,255,.9);
+  background-color: ${white};
   color:            ${purple};
   border:           none;
   border-radius:    .4rem;

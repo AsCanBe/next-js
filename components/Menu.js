@@ -37,7 +37,7 @@ export default (props) => (
 const Menu = styled.div`
   position:                     absolute;
   width:                        100%;
-  background-color:             rgba(255,255,255,.9);
+  background-color:             ${white};
   top:                          -100vh;
   left:                         0;
   height:                       100vh;

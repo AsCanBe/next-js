@@ -15,7 +15,7 @@ export default () => (
       <h2 role="heading">Get in Touch</h2>
       <p>Simply fill out the handy form below, or email <a href="mailto:info@helianthus-counselling.co.uk">info@helianthus-counselling.co.uk</a>, letting me know a little about the issues you're facing, and I'll get right back to you.</p>
       <Form
-        action="../php/contact-form.php"
+        action="../static/php/contact-form.php"
         method="POST"
         role="form"
       >

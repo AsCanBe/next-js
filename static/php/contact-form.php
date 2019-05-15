@@ -11,5 +11,5 @@ if (isset($_POST['submit'])) {
   $txt = "You have received an email from ".$name.".\n\n".$message;
 
   mail($to, $subject, $txt, $headers) or die("Sorry, your message could not be sent. Please call 07508 401223 or try again later.");
-  header("Location: index.html?");
+  header("Location: ../../index.html?");
 }
